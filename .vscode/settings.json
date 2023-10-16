@@ -3,6 +3,7 @@
         "lib/**/*.jar",
         "/home/govind/temp/mail.jar",
         "/home/govind/temp/activation.jar",
-        "/home/govind/temp/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar"
+        "/home/govind/temp/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar",
+        "/home/govind/temp/mysql-connector-j-8.1.0.jar"
     ]
 }
