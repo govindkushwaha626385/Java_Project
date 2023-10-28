@@ -9,7 +9,7 @@ public class EmployeeFunctionality {
 
         int choice1 = 0;
            while(choice1 != 8080){
-                System.out.println("\nEnter 1 for Check User History :- \nEnter 2 for Update user details :- \nEnter 3 for Logout :- ");
+                System.out.println("\nEnter 1 for Check User History :- \nEnter 2 for Update user details :- \nEnter 3 for Logout :- \nEnter 4 for Exit :- ");
                 System.out.print("Enter Your Choice :- ");
                 int choice = sc.nextInt();
                 switch(choice){
@@ -21,6 +21,9 @@ public class EmployeeFunctionality {
                     break;
                     case 3:
                     EL.employeeLogout(email);
+                    break;
+                    case 4:
+                    choice = 8080;
                     break;
                 }
            }

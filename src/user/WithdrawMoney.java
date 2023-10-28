@@ -21,7 +21,7 @@ public class WithdrawMoney{
             ResultSet rs = st.executeQuery();
             rs.next();
             int bal = rs.getInt(1);
-            System.out.print("Your Current balance is " + bal);
+            System.out.println("Your Current balance is " + bal);
             System.out.print("Enter amount for Withdraw :- ");
             int amount = sc.nextInt();
             // Check the Entered amount is less than Account Balance

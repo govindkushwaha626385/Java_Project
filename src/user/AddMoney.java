@@ -21,7 +21,7 @@ public class AddMoney {
             ResultSet rs = pst.executeQuery();
             rs.next();
             int bal = rs.getInt(1);
-            System.out.print("Your Current balance is " + bal);
+            System.out.println("Your Current balance is " + bal);
             System.out.print("Enter amount for Deposit :- ");
             int amount = sc.nextInt();
             PreparedStatement pst1 = con

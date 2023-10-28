@@ -15,7 +15,7 @@ public class UserFunctionality {
         int choice1 = 0;
         while (choice1 != 8080) {
             System.out.println(
-                    "Enter 1 for Add Money:- \nEnter 2 for Withdraw Money :- \nEnter 3 for With Draw Money Using ATM card :- \nEnter 4 for issue ATM card :- \nEnter 5 for Check History :- \nEnter 6 for Update Details :- \nEnter 7 for Log Out :- \nEnter 8 for Delete Account :- \nEnter 9 fro Exit :- ");
+                    "Enter 1 for Add Money:- \nEnter 2 for Withdraw Money :- \nEnter 3 for With Draw Money Using ATM card :- \nEnter 4 for issue ATM card :- \nEnter 5 for Check History :- \nEnter 6 for Update Details :- \nEnter 7 for Log Out :- \nEnter 8 for Delete Account :- \nEnter 9 for Exit :- ");
             System.out.print("Enter Your Choice : ");
             int choice = sc.nextInt();
             switch (choice) {
@@ -42,6 +42,9 @@ public class UserFunctionality {
                     break;
                 case 8:
                     UDA.userDeleteAccount(accountNumber, email);
+                    break;
+                case 9:
+                    choice = 8080;
                     break;
             }
         }

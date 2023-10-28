@@ -26,10 +26,11 @@ public class EmployeeLogin {
             pst1.setInt(1, employeeID);
             ResultSet rs = pst1.executeQuery();
             PreparedStatement pst = con.prepareStatement("update EMPLOYEECREATEACCOUNT set LastLogin = ? where EmployeeId = ?");
-            DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
+            DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
             Date date = new Date();
             String dates = formatter.format(date);
+            
             pst.setString(1, dates);
             pst.setInt(2, employeeID);
             rs.next();

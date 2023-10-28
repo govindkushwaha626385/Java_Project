@@ -12,7 +12,7 @@ public class UserCheckHistory {
         if (accountNumber1 == accountNumber) {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection con = DriverManager.getConnection("jdbc:mysql://locahost:3306/BankManagementSystem",
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/BankManagementSystem",
                         "govind", "govind@2003");
                 PreparedStatement pst = con.prepareStatement("select * from USERHISTORY where AccountNumber = ?");
                 pst.setInt(1, accountNumber);

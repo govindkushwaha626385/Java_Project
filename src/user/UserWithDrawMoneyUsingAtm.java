@@ -10,7 +10,7 @@ public class UserWithDrawMoneyUsingAtm {
     public void withDrawMoneyUsingAtm(int accountNumber) {
         Scanner sc = new Scanner(System.in);
         int atmNumber;
-        System.out.println("Enter Your Atm Number :-");
+        System.out.print("Enter Your Atm Number :-");
         atmNumber = sc.nextInt();
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -23,8 +23,7 @@ public class UserWithDrawMoneyUsingAtm {
             ResultSet rs = st.executeQuery();
             rs.next();
             int bal = rs.getInt(1);
-            System.out.println("Your Current balance is ");
-            System.out.println(bal);
+            System.out.println("Your Current balance is " + bal);
             System.out.print("Enter amount for Withdraw :- ");
             int amount = sc.nextInt();
             if (amount <= bal) {
